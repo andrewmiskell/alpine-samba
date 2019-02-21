@@ -1,0 +1,12 @@
+image: andrewmiskell/alpine-samba:latest
+manifests:
+  -
+    image: andrewmiskell/alpine-samba:armhf
+    platform:
+      architecture: arm
+      os: linux
+  -
+    image: andrewmiskell/alpine-samba:amd64
+    platform:
+      architecture: amd64
+      os: linux
