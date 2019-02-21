@@ -1,4 +1,4 @@
-FROM arm32v6:latest
+FROM arm32v6/alpine:latest
 
 LABEL MAINTAINER="Andrew Miskell <andrewmiskell@mac.com>" \
     Description="Samba docker container, based on Alpine Linux. Can be paired with Avahi for Time Machine"
