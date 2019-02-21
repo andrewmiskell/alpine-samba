@@ -4,7 +4,7 @@ LABEL MAINTAINER="Andrew Miskell <andrewmiskell@mac.com>" \
     Description="Samba docker container, based on Alpine Linux. Can be paired with Avahi for Time Machine"
 
 # copy qemu-arm-static to /usr/bin to allow automated builds for arm on docker-hub    
-COPY qemu-arm-static /usr/bin
+COPY dockerfile/armhf/qemu-arm-static /usr/bin
 
 # upgrade base system and install samba and supervisord
 RUN apk --no-cache upgrade && apk --no-cache add samba samba-common-tools supervisor
